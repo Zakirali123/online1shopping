@@ -1,0 +1,33 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@mui/icons-material": "^5.3.0",
+    "@stripe/react-stripe-js": "github:stripe/react-stripe-js",
+    "@stripe/stripe-js": "github:stripe/stripe-js",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cloudinary": "^1.28.1",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12",
+    "nodemailer": "^6.7.0",
+    "nodemon": "^2.0.14",
+    "stripe": "^8.207.0",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "heroku-postbuild": "cd frontend && NPM_CONFIG_PRODUCTION=false npm install && npm run build"
+  },
+  "author": "",
+  "license": "ISC"
+}
